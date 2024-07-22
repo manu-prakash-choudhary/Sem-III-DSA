@@ -1,9 +1,8 @@
 // write a program to create a singly Linked List
-// https://dpaste.org/LiLwx
 #include <stdio.h>
 #include <stdlib.h>
 
-        typedef struct node{
+typedef struct node{
     int data;
     struct node *next;
 } node;
@@ -81,22 +80,19 @@ void search(node* head, int key){
 }
 
 void reverse(node **headPtr){
-    if(*headPtr == NULL){
-        printf("Linked List is Empty\n");
-    }
-    node *prev = NULL;
-    node* crr = *headPtr;
-    node *next;
 
-    while (crr!= NULL){
+
+    node* prev = NULL;
+    node* crr = *headPtr;
+    node* next;
+
+    while (crr != NULL){
         next = crr->next;
         crr->next = prev;
         prev = crr;
-        crr = next; 
+        crr = next;
     }
-
     *headPtr = prev;
-    return;
 }
 
 void display(node *head){
