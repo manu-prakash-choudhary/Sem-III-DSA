@@ -1,5 +1,12 @@
 // Quick Sort Algorithm
 
+// Algorithm For Quick Sort
+/*
+1. Choose a pivot element from the array.
+2. Partition the array such that all elements less than the pivot are on the left side of the pivot and all elements greater than the pivot are on the right side of the pivot.
+3. Recursively apply the above steps to the left and right sub-arrays until the entire array is sorted.
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -54,9 +61,9 @@ void quick_sort(int left, int right)
 
 int main()
 {
-    printf("Burrah\n");
+    
     quick_sort(0, 7);
-    printf("Burrah2\n");
+    
 
     for (int i = 0; i < 8; i++)
     {
