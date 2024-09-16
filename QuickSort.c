@@ -10,6 +10,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 int arr[8] = {24, 13, 29, 9, 19, 27, 35, 12};
 void swap(int i, int j)
 {
