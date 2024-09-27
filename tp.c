@@ -1,18 +1,23 @@
-// Online C compiler to run C program online
 #include <stdio.h>
-#include <stdlib.h>
 
 
 int main(){
-    char a = '*';
-    for (int i = 1; i <=4;i++)
-    {
-        for (int j = 1; j < 3 + i  ;j++){
-            printf("%c", a);
-            
-        }
-        printf("\n");
-    }
+    int size = 6;
+    int arr[6] = {10,
+                  15,
+                  17,
+                  20,
+                  8,
+                  4};
 
-    return 0;
+    int arr2[6];
+
+    for (int j = 0; j < 6; j++){
+
+        int a = arr[j] * arr[j];
+        printf("%d ", a);
+        arr2[j] = a;
+    }
+    printf("\n");
+    
 }
